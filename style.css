@@ -1,0 +1,103 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffd9b0; /* Light peach background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Card Image */
+.card .img-fluid {
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Card Body */
+.card-body {
+  padding: 40px;
+  color: #eeecec;
+  background-color: #333; /* Dark background */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #eeecec;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  width: 100%;
+}
+
+input[type="text"], input[type="password"], select, .form-check-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus, .form-check-input:focus {
+  border-color: #edb77d;
+  outline: none;
+}
+
+/* Radio Button Styling */
+.radio-item-list .form-check-inline {
+  margin-right: 15px;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  background-color: #edb77d;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d59c59; /* Darker gold shade */
+}
+
+/* Optional: Style for Select Element */
+select.form-select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Additional Spacing for Inputs */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Image & Card Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card-body {
+    padding: 30px;
+  }
+}
